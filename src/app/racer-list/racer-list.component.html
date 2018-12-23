@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-racer-edit></app-racer-edit>
+    <hr />
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let racer of racers; let i = index"
+        (click)="onEditItem(i)"
+      >
+        {{ racer.number }} - {{ racer.name }}
+      </a>
+    </ul>
+  </div>
+</div>

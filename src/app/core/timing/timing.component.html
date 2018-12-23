@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-sm-6">
+    <button class="btn btn-success btn-lg btn-block" (click)="onStart()">
+      START
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-2">
+    <button class="btn btn-primary btn-lg btn-block" (click)="onMinus()">
+      -
+    </button>
+  </div>
+  <div class="col-sm-2">
+    <div class="alert alert alert-info" role="alert">{{ currentNumber }}</div>
+  </div>
+  <div class="col-sm-2">
+    <button class="btn btn-primary btn-lg btn-block" (click)="onPlus()">
+      +
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <button class="btn btn-danger btn-lg btn-block" (click)="onStop()">
+      STOP
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Runtime</h3>
+    <div class="alert alert-info" role="alert">{{ currentTimeSec }}</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Speed</h3>
+    <div class="alert alert-info" role="alert">0.00</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Status</h3>
+    <div class="alert alert-info" role="alert">none</div>
+  </div>
+</div>
